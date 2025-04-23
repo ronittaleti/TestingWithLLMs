@@ -1,0 +1,8 @@
+# requirements.txt
+pytest
+Appium-Python-Client
+google-generativeai
+langchain
+langchain-google-genai
+python-dotenv
+

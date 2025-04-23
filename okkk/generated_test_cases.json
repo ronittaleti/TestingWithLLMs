@@ -1,0 +1,160 @@
+[
+  {
+    "test_case_id": "TC-001",
+    "title": "Set Alarm Time - Valid Time AM",
+    "description": "Verify setting an alarm with a valid time in AM.",
+    "preconditions": [
+      "DeskClock app is launched and TimePicker is displayed."
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Click on the hour '3'.",
+        "element": {
+          "type": "android.view.View",
+          "identifier": "com.google.android.deskclock:id/material_hour_tv",
+          "value": "03"
+        },
+        "expected_result": "Hour is selected as 3."
+      },
+      {
+        "step_number": 2,
+        "action": "Click on the AM button.",
+        "element": {
+          "type": "android.widget.CompoundButton",
+          "identifier": "com.google.android.deskclock:id/material_clock_period_am_button",
+          "value": "AM"
+        },
+        "expected_result": "AM is selected."
+      },
+      {
+        "step_number": 3,
+        "action": "Click on the OK button.",
+        "element": {
+          "type": "android.widget.Button",
+          "identifier": "com.google.android.deskclock:id/material_timepicker_ok_button",
+          "value": "OK"
+        },
+        "expected_result": "Alarm is set for 3:00 AM."
+      }
+    ],
+    "assertions": [
+      "Alarm is successfully set for 3:00 AM. Verify in the alarm list."
+    ],
+    "priority": "High",
+    "test_type": "Functional",
+    "tags": [
+      "alarm",
+      "time",
+      "AM"
+    ]
+  },
+  {
+    "test_case_id": "TC-002",
+    "title": "Set Alarm Time - Valid Time PM",
+    "description": "Verify setting an alarm with a valid time in PM.",
+    "preconditions": [
+      "DeskClock app is launched and TimePicker is displayed."
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Click on the hour '11'.",
+        "element": {
+          "type": "android.widget.TextView",
+          "identifier": null,
+          "value": "11"
+        },
+        "expected_result": "Hour is selected as 11."
+      },
+      {
+        "step_number": 2,
+        "action": "Click on the PM button.",
+        "element": {
+          "type": "android.widget.CompoundButton",
+          "identifier": "com.google.android.deskclock:id/material_clock_period_pm_button",
+          "value": "PM"
+        },
+        "expected_result": "PM is selected."
+      },
+      {
+        "step_number": 3,
+        "action": "Click on the OK button.",
+        "element": {
+          "type": "android.widget.Button",
+          "identifier": "com.google.android.deskclock:id/material_timepicker_ok_button",
+          "value": "OK"
+        },
+        "expected_result": "Alarm is set for 11:00 PM."
+      }
+    ],
+    "assertions": [
+      "Alarm is successfully set for 11:00 PM. Verify in the alarm list."
+    ],
+    "priority": "High",
+    "test_type": "Functional",
+    "tags": [
+      "alarm",
+      "time",
+      "PM"
+    ]
+  },
+  {
+    "test_case_id": "TC-003",
+    "title": "Cancel Alarm Setting",
+    "description": "Verify cancelling alarm setting.",
+    "preconditions": [
+      "DeskClock app is launched and TimePicker is displayed."
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Click on the Cancel button.",
+        "element": {
+          "type": "android.widget.Button",
+          "identifier": "com.google.android.deskclock:id/material_timepicker_cancel_button",
+          "value": "Cancel"
+        },
+        "expected_result": "TimePicker is dismissed and no alarm is set."
+      }
+    ],
+    "assertions": [
+      "No new alarm is added to the alarm list."
+    ],
+    "priority": "Medium",
+    "test_type": "Functional",
+    "tags": [
+      "alarm",
+      "cancel"
+    ]
+  },
+  {
+    "test_case_id": "TC-004",
+    "title": "Switch to Text Input Mode",
+    "description": "Verify switching to text input mode for time input.",
+    "preconditions": [
+      "DeskClock app is launched and TimePicker is displayed."
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Click on the 'Switch to text input mode' button.",
+        "element": {
+          "type": "android.widget.Button",
+          "identifier": "com.google.android.deskclock:id/material_timepicker_mode_button",
+          "value": null
+        },
+        "expected_result": "Text input fields for hour and minute are displayed."
+      }
+    ],
+    "assertions": [
+      "Text input fields are visible and allow user input."
+    ],
+    "priority": "Medium",
+    "test_type": "UI",
+    "tags": [
+      "input",
+      "text"
+    ]
+  }
+]

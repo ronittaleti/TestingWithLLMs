@@ -1,0 +1,118 @@
+[
+  {
+    "test_case_id": "TC-001",
+    "title": "Set Alarm Time - Valid Time AM",
+    "status": "FAILED",
+    "steps_executed": [
+      {
+        "step_number": 1,
+        "action": "Click on the hour '3'.",
+        "status": "FAILED",
+        "error": "Could not find hour element with value 3"
+      },
+      {
+        "step_number": 2,
+        "action": "Click on the AM button.",
+        "status": "FAILED",
+        "error": "Could not find AM button"
+      },
+      {
+        "step_number": 3,
+        "action": "Click on the OK button.",
+        "status": "FAILED",
+        "error": "Could not find OK button"
+      }
+    ],
+    "failures": [
+      {
+        "step": 1,
+        "error": "Could not find hour element with value 3"
+      },
+      {
+        "step": 2,
+        "error": "Could not find AM button"
+      },
+      {
+        "step": 3,
+        "error": "Could not find OK button"
+      }
+    ]
+  },
+  {
+    "test_case_id": "TC-002",
+    "title": "Set Alarm Time - Valid Time PM",
+    "status": "FAILED",
+    "steps_executed": [
+      {
+        "step_number": 1,
+        "action": "Click on the hour '11'.",
+        "status": "FAILED",
+        "error": "Could not find hour element with value 11"
+      },
+      {
+        "step_number": 2,
+        "action": "Click on the PM button.",
+        "status": "FAILED",
+        "error": "Could not find PM button"
+      },
+      {
+        "step_number": 3,
+        "action": "Click on the OK button.",
+        "status": "FAILED",
+        "error": "Could not find OK button"
+      }
+    ],
+    "failures": [
+      {
+        "step": 1,
+        "error": "Could not find hour element with value 11"
+      },
+      {
+        "step": 2,
+        "error": "Could not find PM button"
+      },
+      {
+        "step": 3,
+        "error": "Could not find OK button"
+      }
+    ]
+  },
+  {
+    "test_case_id": "TC-003",
+    "title": "Cancel Alarm Setting",
+    "status": "FAILED",
+    "steps_executed": [
+      {
+        "step_number": 1,
+        "action": "Click on the Cancel button.",
+        "status": "FAILED",
+        "error": "Could not find Cancel button"
+      }
+    ],
+    "failures": [
+      {
+        "step": 1,
+        "error": "Could not find Cancel button"
+      }
+    ]
+  },
+  {
+    "test_case_id": "TC-004",
+    "title": "Switch to Text Input Mode",
+    "status": "FAILED",
+    "steps_executed": [
+      {
+        "step_number": 1,
+        "action": "Click on the 'Switch to text input mode' button.",
+        "status": "FAILED",
+        "error": "Could not find text input mode button"
+      }
+    ],
+    "failures": [
+      {
+        "step": 1,
+        "error": "Could not find text input mode button"
+      }
+    ]
+  }
+]

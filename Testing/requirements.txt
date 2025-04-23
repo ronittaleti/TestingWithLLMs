@@ -1,0 +1,4 @@
+# requirements.txt
+pytest
+Appium-Python-Client rm -rf ~/Library/Application\ Support/AndroidStudio*rm -rf ~/Library/Logs/AndroidStudio
+
